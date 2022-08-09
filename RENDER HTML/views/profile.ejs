@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <h1>Welcome to Profile Page
+        <%= userdata.name %>
+    </h1>
+
+    <ul>
+        <% userdata.skills.forEach((item)=>{ %>
+
+            <li>
+                <%= item %>
+            </li>
+            <% }) %>
+    </ul>
+</body>
+
+</html>
